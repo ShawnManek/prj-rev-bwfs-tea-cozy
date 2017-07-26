@@ -1,0 +1,253 @@
+
+/* toggle box borders for styling check */
+
+.box {
+  border: 1px dotted green;
+}
+
+/* Default html body characteristics */
+
+body {
+  margin: 0;
+}
+
+/* Common font style characteristics utilized for TeaCozy Site */
+
+* {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  display: block;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+/* Utilize below for text/sections when needed throughout site*/
+
+.typebasic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.bannertextbg {
+    min-width: 1200px;
+}
+
+.transparentbg {
+  background-color: transparent;
+}
+
+/* Header section */
+
+header {
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  padding: 9px 10px;
+  display: flex;
+  flex-flow: wrap row; /*imo more professional w.o weird navbar wrapping. To improve, write nowrap here and in .navlinks below (kept <header> and .navlinks as wrap to match sample website)*/
+  align-items: center;
+  z-index: 20;
+}
+
+.logo {
+  display: inline-block;
+  text-align: left;
+  flex-grow: 1;
+  height: 50px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: wrap row; /*imo more professional w.o weird navbar wrapping. To improve, write nowrap here and in <header> above (kept <header> and .navlinks as wrap to match sample website)*/
+  height: 50px;
+  margin: 0 10px;
+}
+
+.navlinks span,
+.navlinks a {
+  background-color: transparent;
+  display: inline-flex;
+  flex-flow: nowrap row;
+  padding: 10px 10px;
+}
+
+/* MAIN SECTION */
+
+/* Beginning of the main section with 3 main containters - mission, featured, locations */
+
+main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  min-width: 1200px;
+}
+
+/* the main container class - utilize for each new section added to website then manipulate */
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  padding-top: 69px;
+  align-items: center;
+}
+
+/*Main section, Container 1: Mission*/
+
+.missionsection {
+  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+}
+
+.missionstatement {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Main section, Container 2: featured teas (includes 2 sections: a. title and b. types of teas and their pics) */
+/*featured tea - a. title*/
+.featuredsection {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*featured tea - b. types of teas*/
+.teatyperow {
+  display: inline-flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-shrink: 0;
+}
+
+.picplusname {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 25px;
+}
+
+.picplusname img {
+  display: inline-block;
+  height: 200px;
+  width: 300px;
+  margin-bottom: 1px;
+}
+
+/*Main section, Container 3: Location (includes 2 sections: a. title and b. the locations) */
+/*Location a. title*/
+.locationsection {
+  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  min-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Location b. locations */
+.locplusaddress {
+  background: none;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.locaddress {
+  opacity: 1.0;
+  background-color: black;
+  min-width: 300px;
+  margin: 0 20px 0 20px;
+  padding-bottom: 10px;
+}
+
+.locaddress h3,
+.locaddress p {
+  padding: 20px;
+}
+
+/* Footer section: 2 containers 1. contact 2. copyright */
+
+footer {
+  display: flex;
+  position: relative;
+  flex-flow: wrap column;
+  margin-bottom: 20px;
+}
+
+.contact {
+  height: 200px;
+  width: auto;
+}
+
+.contact h5 {
+  padding: 20px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.copyright h5 {
+  text-align: left;
+}
